@@ -1,22 +1,13 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="en" class="h-screen">
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        name="viewport">
-  <meta content="ie=edge" http-equiv="X-UA-Compatible">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Jah pod sextar?</title>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jah Pod Sextar?</title>
 </head>
-
-<body>
-  <main class="h-screen flex flex-col items-center justify-center gap-y-6">
-    <h1 class="text-6xl font-bold">Jah pod sextar?</h1>
-    <p id="result" class="text-2xl"><!-- mensagem aqui --></p>
-  </main>
-  
-  <script src="main.js"></script>
+<body class="bg-slate-100 h-full">
+  <div id="root" class="h-full"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
-
 </html>

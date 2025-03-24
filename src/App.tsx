@@ -3,6 +3,7 @@ import Answer from "./components/Answer.tsx";
 import Footer from "./components/Footer.tsx";
 import {useState, useEffect} from "react";
 import {getResponse} from "./utils/getResponse.ts";
+import celebrateWeekend from "./utils/celebrateWeekend.ts";
 
 function App() {
   const [response, setResponse] = useState('Pensando...');
@@ -10,6 +11,10 @@ function App() {
   useEffect(() => {
     setResponse(getResponse());
   }, [])
+
+  window.addEventListener("load", () => {
+    celebrateWeekend()
+  })
 
   return (
     <>

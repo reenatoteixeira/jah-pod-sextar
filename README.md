@@ -122,9 +122,9 @@ Adding new themes to the project is simple and straightforward. Just follow thes
 
 ```typescript
 const availableThemes: string[] = [
-  "Dark",
-  "Light",
-  "Pop Filter",   // Add your new theme here
+  'Dark',
+  'Light',
+  'Pop Filter', // Add your new theme here
   // other themes...
 ]
 ```

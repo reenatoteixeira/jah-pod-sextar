@@ -1,5 +1,5 @@
-import confetti, {Shape} from 'canvas-confetti'
-import checkWeekDayAndHour from "./checkWeekDayAndHour.ts";
+import confetti, { Shape } from 'canvas-confetti'
+import checkWeekDayAndHour from './checkWeekDayAndHour.ts'
 
 function celebrateWeekend() {
   const weekDay = checkWeekDayAndHour(),
@@ -12,37 +12,37 @@ function celebrateWeekend() {
     confettiTicks = 300,
     confettiShapes: Shape[] = ['square', 'circle'],
     confettiColors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'],
-    confettiZIndex = 100;
+    confettiZIndex = 100
 
-  if (weekDay === "fridayAfterNoon") {
+  if (weekDay === 'fridayAfterNoon') {
     confetti({
       particleCount: confettiCount,
       angle: confettiAngle,
       spread: confettiSpread,
-      origin: {x: confettiOriginX, y: confettiOriginY},
+      origin: { x: confettiOriginX, y: confettiOriginY },
       startVelocity: confettiSpeed,
       ticks: confettiTicks,
       shapes: confettiShapes,
       colors: confettiColors,
-      zIndex: confettiZIndex
-    });
+      zIndex: confettiZIndex,
+    })
 
     confetti({
       particleCount: confettiCount,
       angle: confettiAngle * 3,
       spread: confettiSpread,
-      origin: {x: confettiOriginX + 1.4, y: confettiOriginY},
+      origin: { x: confettiOriginX + 1.4, y: confettiOriginY },
       startVelocity: confettiSpeed,
       ticks: confettiTicks,
       shapes: confettiShapes,
       colors: confettiColors,
-      zIndex: confettiZIndex
-    });
+      zIndex: confettiZIndex,
+    })
 
-    return true;
+    return true
   }
 
-  return false;
+  return false
 }
 
-export default celebrateWeekend;
+export default celebrateWeekend

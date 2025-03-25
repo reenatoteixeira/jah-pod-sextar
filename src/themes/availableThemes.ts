@@ -1,6 +1,3 @@
-const availableThemes: string[] = [
-  "Dark",
-  "Light",
-]
+const availableThemes: string[] = ['Dark', 'Light']
 
-export default availableThemes;
+export default availableThemes

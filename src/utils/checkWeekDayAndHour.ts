@@ -1,9 +1,9 @@
-import getCurrentDayAndHour from "./getCurrentDayAndHour.ts";
+import getCurrentDayAndHour from './getCurrentDayAndHour.ts'
 
 function checkWeekDayAndHour() {
-  const {dateDay, dateHour} = getCurrentDayAndHour();
+  const { dateDay, dateHour } = getCurrentDayAndHour()
 
-  return dateDay === 'friday' && dateHour > 12 ? 'fridayAfterNoon' : dateDay;
+  return dateDay === 'friday' && dateHour > 12 ? 'fridayAfterNoon' : dateDay
 }
 
-export default checkWeekDayAndHour;
+export default checkWeekDayAndHour

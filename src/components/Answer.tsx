@@ -1,12 +1,9 @@
 interface AnswerProps {
-  answer: string;
+  answer: string
 }
 
-function Answer({answer}: AnswerProps) {
-  return (
-    <p className={'text-lg sm:text-2xl md:text-3xl'}>
-      {answer}</p>
-  )
+function Answer({ answer }: AnswerProps) {
+  return <p className={'text-lg sm:text-2xl md:text-3xl'}>{answer}</p>
 }
 
-export default Answer;
+export default Answer

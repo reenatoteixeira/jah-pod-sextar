@@ -10,8 +10,3 @@ function Title({title}: TitleProps) {
 }
 
 export default Title;
-
-
-
-
-

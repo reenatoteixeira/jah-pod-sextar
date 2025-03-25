@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: var(--color-text);
+  --color-footer: var(--color-footer);
+  --color-hover: var(--color-hover);
+  --color-background: var(--color-bg);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }

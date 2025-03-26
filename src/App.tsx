@@ -8,11 +8,12 @@ import ThemeSelect from './components/ThemeSelect.tsx'
 
 function App() {
   const [response, setResponse] = useState('Pensando...')
-  const [theme, setTheme] = useState('')
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') ? localStorage.getItem('theme') : null,
+  )
 
   function handleThemeChange(theme: string) {
-    if (theme != '' && theme != 'system') localStorage.setItem('theme', theme)
-    if (theme === 'system') localStorage.removeItem('theme')
+    if (theme != '') localStorage.setItem('theme', theme)
     setTheme(theme)
   }
 
@@ -24,7 +25,7 @@ function App() {
     document.documentElement.className = ''
     const selectedTheme = localStorage.getItem('theme')
 
-    if (selectedTheme) {
+    if (selectedTheme && selectedTheme !== 'system') {
       document.documentElement.classList.add(selectedTheme)
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('theme--dark')
@@ -45,7 +46,7 @@ function App() {
         }
       >
         <div className='fixed top-0 right-0 p-4 text-primary opacity-40'>
-          <ThemeSelect onChange={handleThemeChange} />
+          <ThemeSelect onChange={handleThemeChange} selectedTheme={theme} />
         </div>
 
         <div

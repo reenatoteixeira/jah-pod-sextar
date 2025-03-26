@@ -1,34 +1,35 @@
 import availableThemes from '../themes/availableThemes.ts'
 
 interface ThemeSelectProps {
+  selectedTheme: string | null
   onChange: (theme: string) => void
 }
 
-function ThemeSelect({ onChange }: ThemeSelectProps) {
-  const themes = availableThemes
+function ThemeSelect({ onChange, selectedTheme }: ThemeSelectProps) {
+  const themes = availableThemes,
+    themeNameMaxLength = 15
 
   return (
     <select
       name='themes'
       id='theme-select'
       onChange={e => onChange(e.target.value)}
-      defaultValue='default'
+      defaultValue={selectedTheme ?? 'default'}
       title='Select theme'
-      className='appearance-auto pr-2 cursor-pointer'
+      className='overflow-ellipsis cursor-pointer max-w-30 bg-background text-primary'
     >
       <option value='default' disabled hidden>
         Select theme
       </option>
-      <option value='system' className='text-slate-950'>
-        System
-      </option>
+      <option value='system'>System</option>
       {themes.map(theme => (
         <option
           key={`theme--${theme.toString().toLowerCase().split(' ').join('-')}`}
           value={`theme--${theme.toString().toLowerCase().split(' ').join('-')}`}
-          className='text-slate-950'
         >
-          {theme}
+          {theme.length > themeNameMaxLength
+            ? theme.substring(0, themeNameMaxLength) + '...'
+            : theme}
         </option>
       ))}
     </select>

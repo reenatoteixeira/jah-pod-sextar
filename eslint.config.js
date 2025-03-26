@@ -8,7 +8,11 @@ import esLintConfigPrettier from 'eslint-config-prettier/flat'
 export default tseslint.config(
   { ignores: ['dist'] },
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended, esLintConfigPrettier],
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommended,
+      esLintConfigPrettier,
+    ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,

@@ -133,6 +133,8 @@ const availableThemes: string[] = [
 
 - After following the above steps, your new theme should appear in the dropdown menu and be selectable.
 
+> Notice that theme names with more than 15 characters will be truncated when shown inside the themes dropdown menu
+
 ## 📌 Get Ready to Sextar!
 
 Stay tuned for more updates and fun features! Until then... is it time to "sextar"? 🤔

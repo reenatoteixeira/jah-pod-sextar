@@ -10,7 +10,7 @@ function Answer({ answer }: AnswerProps) {
 
   return (
     <motion.div
-      key={answer}
+      key={`${answer}-${Date.now()}`}
       initial={animation.initial}
       animate={animation.animate}
       exit={animation.exit}

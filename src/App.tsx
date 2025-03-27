@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { getResponse } from './utils/getResponse.ts'
 import celebrateWeekend from './utils/celebrateWeekend.ts'
 import ThemeSelect from './components/ThemeSelect.tsx'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   const [response, setResponse] = useState('Pensando...')
@@ -55,7 +56,10 @@ function App() {
           }
         >
           <Title title={'Jah pod sextar?'} />
-          <Answer answer={response} />
+
+          <AnimatePresence>
+            <Answer answer={response} />
+          </AnimatePresence>
         </div>
       </main>
 

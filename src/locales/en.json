@@ -1,0 +1,62 @@
+{
+  "question": "Is it friday yet?",
+  "footer": "Developed with 💙 by ",
+  "responses": {
+    "monday": [
+      "The week just started and you're already here?",
+      "What am I doing with my life?",
+      "Seriously? Of course not.",
+      "There's a long way to go yet.",
+      "No, but I wish."
+    ],
+    "tuesday": [
+      "No, but Monday's already gone.",
+      "Calm down... There's still a long road ahead.",
+      "No, but it's time to start planning.",
+      "Don't you have a job?",
+      "No."
+    ],
+    "wednesday": [
+      "Not yet, but we're halfway there.",
+      "Who knows, maybe after tomorrow...",
+      "Hold that anxiety, just a bit more.",
+      "No. Now go back to work.",
+      "I'll let you know."
+    ],
+    "thursday": [
+      "Almost, closer than yesterday.",
+      "Who knows, maybe tomorrow?",
+      "Don't know, is it already Friday?",
+      "Hmmmm... No.",
+      "What do you think? Of course not."
+    ],
+    "friday": [
+      "Almost monday, but not noon yet.",
+      "Not yet, productivity until noon!",
+      "Is it noon already? Then no.",
+      "Almost there, let's pretend to work a little bit.",
+      "Come back after noon."
+    ],
+    "fridayAfterNoon": [
+      "Now, TGIF!",
+      "Yes! What's done is done!",
+      "Yes! Simple as that.",
+      "Sure, if it's past noon, it's overtime!",
+      "Definitely! Have a great weekend!"
+    ],
+    "saturday": [
+      "Hey, didn't you start the weekend?",
+      "You're late, there's no one left here.",
+      "There's still time to enjoy the weekend.",
+      "Late for this one, early for the next.",
+      "Enjoying your Saturday?"
+    ],
+    "sunday": [
+      "Refreshing the page won't make time fly faster.",
+      "Too late, try again next week.",
+      "No more time, Monday's knocking.",
+      "Already thinking about next weekend?",
+      "Hope you had a great weekend."
+    ]
+  }
+}

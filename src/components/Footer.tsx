@@ -1,9 +1,10 @@
 interface FooterProps {
+  text: string
   link: string
   target: string
 }
 
-function Footer({ link, target }: FooterProps) {
+function Footer({ text, link, target }: FooterProps) {
   return (
     <footer
       className={
@@ -11,7 +12,7 @@ function Footer({ link, target }: FooterProps) {
       }
     >
       <p>
-        Developed&nbsp;with&nbsp;💙&nbsp;by&nbsp;
+        {text}
         <a
           href={target}
           className={'transition-all hover:underline hover:text-hover'}

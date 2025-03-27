@@ -1,9 +1,10 @@
-import responsesJSON from '../data/responses.json'
 import checkWeekDayAndHour from './checkWeekDayAndHour.ts'
+import { TFunction } from 'i18next'
 
-export function getResponse() {
-  const day = checkWeekDayAndHour() as keyof typeof responsesJSON,
-    key = Math.floor(Math.random() * responsesJSON[day].length)
+export function getResponse(t: TFunction) {
+  const day = checkWeekDayAndHour(),
+    responses = t(`responses.${day}`, { returnObjects: true }) as string[],
+    key = Math.floor(Math.random() * responses.length)
 
-  return responsesJSON[day][key]
+  return responses[key]
 }

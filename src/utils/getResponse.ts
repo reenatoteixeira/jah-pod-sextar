@@ -1,6 +1,5 @@
 import checkWeekDayAndHour from './checkWeekDayAndHour.ts'
 import { TFunction } from 'i18next'
-import i18n from '../i18n.ts'
 
 export function getResponse(t: TFunction) {
   const day = checkWeekDayAndHour(),

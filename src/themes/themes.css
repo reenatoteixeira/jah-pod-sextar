@@ -1,0 +1,13 @@
+.theme--light {
+  --color-text: #020618;
+  --color-footer: #020618;
+  --color-hover: #2b7fff;
+  --color-bg: #e2e8f0;
+}
+
+.theme--dark {
+  --color-text: #e2e8f0;
+  --color-footer: #e2e8f0;
+  --color-hover: #2b7fff;
+  --color-bg: #020618;
+}

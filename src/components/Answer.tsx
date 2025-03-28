@@ -1,12 +1,24 @@
+import getAnimation from '../utils/getAnimation.ts'
+import { motion } from 'framer-motion'
+
 interface AnswerProps {
-  answer: string;
+  answer: string
 }
 
-function Answer({answer}: AnswerProps) {
+function Answer({ answer }: AnswerProps) {
+  const animation = getAnimation()
+
   return (
-    <p className={'text-lg sm:text-2xl md:text-3xl'}>
-      {answer}</p>
+    <motion.div
+      key={`${answer}-${Date.now()}`}
+      initial={animation.initial}
+      animate={animation.animate}
+      exit={animation.exit}
+      transition={animation.transition}
+    >
+      <p className={'text-lg sm:text-2xl md:text-3xl'}>{answer}</p>
+    </motion.div>
   )
 }
 
-export default Answer;
+export default Answer

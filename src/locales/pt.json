@@ -1,0 +1,62 @@
+{
+  "question": "Jah pod sextar?",
+  "footer": "Desenvolvido com 💙 por ",
+  "responses": {
+    "monday": [
+      "Semana mal começou e você já tá aqui?",
+      "O que eu tô fazendo da minha vida?",
+      "Sério? Claro que não.",
+      "Falta muito ainda.",
+      "Não, mas quem me dera."
+    ],
+    "tuesday": [
+      "Não, mas a segunda-feira já passou.",
+      "Calma... Ainda tem chão.",
+      "Não, mas já dá pra planejar.",
+      "E o serviço?",
+      "Não."
+    ],
+    "wednesday": [
+      "Ainda não, mas meio caminho andado.",
+      "Quem sabe depois de amanhã...",
+      "Segura a ansiedade, só mais um pouco.",
+      "Não. Agora vai trabalhar.",
+      "Vou ver e te aviso"
+    ],
+    "thursday": [
+      "Quase, tá mais perto que ontem.",
+      "Quem sabe amanhã?",
+      "Depende, já é sexta?",
+      "Hmmmm... Não.",
+      "O que você acha? Claro que não."
+    ],
+    "friday": [
+      "Chega segunda-feira, mas não chega meio-dia.",
+      "Ainda não, produtividade até meio-dia!",
+      "Já é meio-dia? Então não pode.",
+      "Quase, bora fingir que trabalha um pouquinho.",
+      "Volta aqui depois do meio-dia."
+    ],
+    "fridayAfterNoon": [
+      "Agora sim, sextou!",
+      "Já! Quem fez, fez!",
+      "Sim! Simples assim.",
+      "Já, se passou do meio-dia é hora extra!",
+      "Deve! Bom fim de semana!"
+    ],
+    "saturday": [
+      "Ué, você não sextou?",
+      "Tá atrasado, não tem ninguém aqui.",
+      "Ainda dá tempo de curtir o fim de semana.",
+      "Atrasado pra esse, adiantado pro próximo.",
+      "Sabadou?"
+    ],
+    "sunday": [
+      "Atualizar a página não faz passar mais rápido.",
+      "Tarde demais, agora só na próxima.",
+      "Não dá mais tempo, segunda-feira tá aí.",
+      "Já pensando na próxima?",
+      "Espero que você tenha sextado."
+    ]
+  }
+}
